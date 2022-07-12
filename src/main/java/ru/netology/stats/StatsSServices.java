@@ -12,11 +12,8 @@ public class StatsSServices {
     }
 
     public int getMediumAmountSalesOfMonth(int[] sales) {
-        int sum = 0;
-        for (int i = 0; i < sales.length; i++) {
-            sum += sales[i];
-        }
-        return sum / sales.length;
+        int sum = getAmountSales(sales);
+        return sum/ sales.length;
 
     }
 
